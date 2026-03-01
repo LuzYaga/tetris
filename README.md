@@ -9,14 +9,7 @@ Um jogo inspirado em Tetris feito em Python com a biblioteca Pygame.
 ## Como executar
 
 ## Download
-
-Não quer instalar o Python? Baixe o executável diretamente!
-
-1. Vá até a pasta `dist` do repositório
-2. Baixe o arquivo `Tetris.exe`
-3. Execute o arquivo
-
-> **Atenção:** O Windows pode exibir um aviso de segurança ao executar. Clique em "Mais informações" e depois "Executar assim mesmo".
+Baixe a última versão em [Releases](https://github.com/LuzYaga/tetris/releases)
 
 ### 1. Clone o repositório
 ```
@@ -58,5 +51,3 @@ python main.py
 - `funcoes.py` — funções do jogo
 - `config.py` — configurações e constantes
 - `assets/` — imagens e músicas
-- `dist/` — executável do jogo
-  - `Tetris.exe` — executável para Windows
