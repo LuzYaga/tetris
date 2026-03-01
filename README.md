@@ -29,11 +29,6 @@ cd main
 python main.py
 ```
 
-## Como instalar
-```
-pip install pygame
-```
-
 ## Como jogar
 - **Seta esquerda / A** — mover para esquerda
 - **Seta direita / D** — mover para direita
