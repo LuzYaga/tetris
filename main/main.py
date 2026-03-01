@@ -1,5 +1,5 @@
 import sys
-
+import os
 import pygame
 
 from funcoes import *
@@ -7,13 +7,20 @@ import funcoes
 #Inicializa jogo
 pygame.init()
 
+def caminho(arquivo):
+    #Verifica se o jogo está rodando como .exe ou como script normal
+    if hasattr(sys, '_MEIPASS'):
+        return os.path.join(sys._MEIPASS, arquivo)
+    else:
+        return os.path.join(os.path.abspath("."), arquivo)
+
 #Muda o ícone do jogo
-icone = pygame.image.load("../assets/tetris.png")
+icone = pygame.image.load(caminho("assets/tetris.ico"))
 pygame.display.set_icon(icone)
 
 #Adiciona a música ao jogo
 pygame.mixer.init()
-pygame.mixer.music.load("../assets/tetrisTheme.mp3")
+pygame.mixer.music.load(caminho("assets/tetrisTheme.mp3"))
 pygame.mixer.music.set_volume(0.3)
 pygame.mixer.music.play(-1)
 
