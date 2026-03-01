@@ -10,7 +10,7 @@ Um jogo inspirado em Tetris feito em Python com a biblioteca Pygame.
 
 ## Download
 Baixe a última versão em [Releases](https://github.com/LuzYaga/tetris/releases)
-
+> **Atenção:** O Windows pode exibir um aviso de segurança ao executar. Clique em "Mais informações" e depois "Executar assim mesmo".
 ### 1. Clone o repositório
 ```
 git clone https://github.com/LuzYaga/tetris.git
