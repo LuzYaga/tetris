@@ -3,7 +3,7 @@ import sys
 import pygame
 
 from funcoes import *
-
+import funcoes
 #Inicializa jogo
 pygame.init()
 
@@ -139,6 +139,7 @@ while True:
                     game_over = True
             tempo_queda = 0
 
+    velocidade_queda = max(100, 500 // funcoes.nivel)
     #Pinta o fundo de preto
     tela.fill(PRETO)
 

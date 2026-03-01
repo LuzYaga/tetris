@@ -84,8 +84,10 @@ def fixar_peca(peca):
         #salva a cor da peça no tabuleiro
         tabuleiro[linha][coluna] = peca["cor"]
 
+nivel = 1
+
 def limpar_linhas():
-    global pontuacao
+    global pontuacao, nivel
     linhas_completas = []
 
     for linha in range(LINHAS):
@@ -109,6 +111,8 @@ def limpar_linhas():
     elif len(linhas_completas) == 4:
         pontuacao += 800
 
+    #Atualiza o nível a cada 500 pontos
+    nivel = pontuacao // 500 + 1
 def verificar_game_over(peca):
     # Se a nova peça já começa numa célula ocupada, acabou o jogo
     for bloco in peca["forma"]:
@@ -138,4 +142,5 @@ def reiniciar():
     global tabuleiro, pontuacao, game_over
     tabuleiro = [[0] * COLUNAS for _ in range(LINHAS)]
     pontuacao = 0
+    nivel = 1
     return False
